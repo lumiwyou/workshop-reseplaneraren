@@ -9,13 +9,13 @@
 <body>
 
     <div class="topbar">
-        <div class="topbar-sok">
+        <button class="topbar-sok">
             <svg class="ikon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
                 <circle cx="11" cy="11" r="6.5"/>
                 <line x1="15.8" y1="15.8" x2="21" y2="21"/>
             </svg>
             <span>Sök</span>
-        </div>
+        </button>
         <img src="img/logo.svg" class="logo">
         <div class="topbar-meny">
             <span>Meny</span>
@@ -38,39 +38,49 @@
     <div class="sokpanel">
         <div class="sokrubrik">Vart vill du åka?</div>
 
+        <form id="reseplanerare-form">
         <div class="falt">
-            <div class="etikett">Från</div>
+            <label class="etikett" id="reseplanerare-fran-label">Från</label>
             <input type="text" class="input">
         </div>
 
         <div class="vaxla">⇅</div>
 
         <div class="falt">
-            <div class="etikett">Till</div>
+            <label class="etikett" id="reseplanerare-till-label">Till</label>
             <input type="text" class="input">
         </div>
 
         <div class="falt-rad">
             <div class="falt">
-                <div class="etikett">Datum</div>
+                <label class="etikett" id="reseplanerare-datum-label">Datum</label>
                 <input type="text" class="input">
             </div>
             <div class="falt">
-                <div class="etikett">Tid</div>
+                <label class="etikett" id="reseplanerare-tid-label">Tid</label>
                 <input type="text" class="input">
             </div>
         </div>
-
+       </form>
+       
         <div class="fel"></div>
 
-        <div class="knapp">Sök resa</div>
+        <button class="knapp">Sök resa</button>
     </div>
 
     <div class="genvagar">
-        <div class="genvag">Reseplanering<span class="pil">→</span></div>
-        <div class="genvag">Biljetter<span class="pil">→</span></div>
-        <div class="genvag">Kundservice<span class="pil">→</span></div>
-        <div class="genvag">Aktuellt<span class="pil">→</span></div>
+        <a href="" class="genvag-lank">
+            <div class="genvag">Reseplanering<span class="pil">→</span></div>
+        </a>
+        <a href="" class="genvag-lank">
+            <div class="genvag">Biljetter<span class="pil">→</span></div>
+        </a>
+        <a href="" class="genvag-lank">
+            <div class="genvag">Kundservice<span class="pil">→</span></div>
+        </a>
+        <a href="" class="genvag-lank">
+            <div class="genvag">Aktuellt<span class="pil">→</span></div>
+        </a>
     </div>
 
     <div class="trafik">
