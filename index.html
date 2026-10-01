@@ -9,7 +9,7 @@
 <body>
 
     <div class="topbar">
-        <button class="topbar-sok">
+        <button class="topbar-sok" tabindex="1">
             <svg class="ikon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
                 <circle cx="11" cy="11" r="6.5"/>
                 <line x1="15.8" y1="15.8" x2="21" y2="21"/>
@@ -17,7 +17,7 @@
             <span>Sök</span>
         </button>
         <img src="img/logo.svg" class="logo">
-        <button class="topbar-meny">
+        <button class="topbar-meny" tabindex="1">
             <span>Meny</span>
             <svg class="ikon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
                 <line x1="3" y1="6" x2="21" y2="6"/>
@@ -31,10 +31,10 @@
         <img src="img/tunnelbana-stockholm-1-1.jpg" class="hero-bild">
         <div class="flikar">
             <div class="flik aktiv">
-                <button class="flik-knapp">Sök resa</button>
+                <button  tabindex="3" class="flik-knapp">Sök resa</button>
             </div>
             <div class="flik">
-                <button class="flik-knapp">Sök avgångar</button>
+                <button  tabindex="4" class="flik-knapp">Sök avgångar</button>
             </div>
         </div>
     </div>
@@ -45,45 +45,51 @@
         <form id="reseplanerare-form">
         <div class="falt">
             <label class="etikett" id="reseplanerare-fran-label">Från</label>
-            <input type="text" class="input">
+            <input tabindex="5" type="text" class="input">
         </div>
 
         <div class="vaxla">⇅</div>
 
         <div class="falt">
             <label class="etikett" id="reseplanerare-till-label">Till</label>
-            <input type="text" class="input">
+            <input tabindex="6" type="text" class="input">
         </div>
 
         <div class="falt-rad">
             <div class="falt">
                 <label class="etikett" id="reseplanerare-datum-label">Datum</label>
-                <input type="text" class="input">
+                <input tabindex="7" type="text" class="input">
             </div>
             <div class="falt">
                 <label class="etikett" id="reseplanerare-tid-label">Tid</label>
-                <input type="text" class="input">
+                <input tabindex="8" type="text" class="input">
             </div>
         </div>
        </form>
        
-        <div class="fel"></div>
+        <div class="fel" role="alert">
+            <h3>Inga tåg på Saltsjöbanan kvällar och nätter på grund av underhållsarbete</h3>
+            <div class="fel-tid">
+                p
+            </div>
+            <p>Saltsjöbanan är helt inställd från cirka kl 20.30 till kl. 02 på grund av underhållsarbeten. Bussar ersätter – och den ordinarie ersättningstrafiken går som vanligt under dagtid. </p>
+        </div>
 
-        <button class="knapp">Sök resa</button>
+        <button tabindex="9" class="knapp">Sök resa</button>
     </div>
 
     <div class="genvagar">
         <a href="" class="genvag-lank">
-            <div class="genvag">Reseplanering<span class="pil">→</span></div>
+            <div tabindex="10" class="genvag">Reseplanering<span class="pil">→</span></div>
         </a>
         <a href="" class="genvag-lank">
-            <div class="genvag">Biljetter<span class="pil">→</span></div>
+            <div tabindex="11" class="genvag">Biljetter<span class="pil">→</span></div>
         </a>
         <a href="" class="genvag-lank">
-            <div class="genvag">Kundservice<span class="pil">→</span></div>
+            <div tabindex="12" class="genvag">Kundservice<span class="pil">→</span></div>
         </a>
         <a href="" class="genvag-lank">
-            <div class="genvag">Aktuellt<span class="pil">→</span></div>
+            <div tabindex="13" class="genvag">Aktuellt<span class="pil">→</span></div>
         </a>
     </div>
 
