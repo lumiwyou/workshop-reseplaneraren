@@ -35,6 +35,15 @@ body {
     color: inherit;
 }
 
+.flik-knapp {
+    border-style: none;
+    background: none;
+    color: inherit;
+    font-weight: inherit;
+    text-decoration: inherit;
+    font-size: inherit;
+}
+
 .ikon {
     width: 22px;
     height: 22px;
@@ -116,8 +125,11 @@ body {
     background-color: #ffffff;
 }
 
+:focus-visible{
+    outline: 1px black;
+}
+
 .input:focus {
-    outline: none;
     border-color: #007bb5;
 }
 
