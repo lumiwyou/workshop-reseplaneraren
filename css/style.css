@@ -30,6 +30,9 @@ body {
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
+    border-style: none;
+    background: none;
+    color: inherit;
 }
 
 .ikon {
